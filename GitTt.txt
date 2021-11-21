@@ -1,0 +1,77 @@
+Step 1:
+initialise the file by using command (go to the directory where the file is present) 
+"git init"
+
+--------------------------------------------------------
+Step 2: 
+To check the current status of the git u can aways use command :
+"git status"
+
+--------------------------------------------------------
+Step 3: 
+To add the file in the staging use
+"git add <file name>" (to add a perticular file in the directory)
+OR
+"git add  ."  (to add all the file file in the directory)
+ex of file name :- chap1.txt
+Now the file is in the staging area
+
+*****
+
+To remove a file from the stagging area use,
+"git rm --cached -r ." (to remove all files)
+"git rm --cached -r <file name>"
+
+---------------------------------------------------------
+Step 4:
+To commit the file we use 
+"git commit -m "<add message>" "
+
+-----------------------------------------------------------
+Step 5:
+to check previous commits use
+"git log"
+
+
+==================================================================================
+
+If we want to access the last version of the file, we follow the steps below:
+Step 1:
+to the check the difference between the latest and the old just previous version, we use the following command : 
+"git diff <file name>"
+
+-------------------------------------------------------------
+Step 2:
+To roll back the file to the just previous version of the document use :
+"git checkout <filename>"   
+
+=====================================================================
+			
+			    GITHUB AND REMOTE REPOSITORY
+       
+1. create github account
+2. go to top right corner and click the '+'(plus) icon, select new repository.
+
+---------------------------------------------------------------------------
+follow the commands in github page to push the documents to github
+
+
+=====================================================================
+				CLONING
+
+1.travel to the directory where you want the file to be.
+2. the type the command "git clone <url>"
+
+=====================================================================
+			BRANCHING AND MERGING
+
+1. to check your present branch : "git branch"
+2.To create new branch : "git branch <new branch name>"
+3.To move from current branch to another branch : "git checkout <branch name>"
+4.To merge two branch 
+    i. go to main branch
+   ii. "git merge <branch name>"
+
+=====================================================================
+			To PUSH THE UPDATED CONTENT
+use : "git push origin main -u"
